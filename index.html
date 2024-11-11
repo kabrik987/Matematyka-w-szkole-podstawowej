@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematyka w szkole podstawowej</title>
+    <!-- Dodanie Google Fonts dla Poppins i Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Lora:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Tło z delikatnym rysunkiem matematycznym */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('Images/tło.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        /* Tytuł strony */
+        h1 {
+            font-family: 'Lora', serif;
+            color: #b5651d;
+            font-size: 2.5em;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Kontener na kafelki */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Styl kafelków */
+        .tile {
+            background-color: #f5f5dc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .tile:hover {
+            transform: scale(1.05);
+        }
+
+        .tile h3 {
+            font-family: 'Lora', serif;
+            color: #b5651d;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .tile p {
+            color: #333333;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .tile a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Wyśrodkowana stopka z adresem e-mail */
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2em;
+            color: #b5651d;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Matematyka w szkole podstawowej</h1>
+    
+    <div class="container">
+        <div class="tile">
+            <a href="zbior_zadan.html">
+                <h3>Zbiór zadań</h3>
+                <p>Zestawy zadań dla klas 4-8 szkoły podstawowej.</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="arkusze_egzaminacyjne.html">
+                <h3>Egzamin ósmoklasisty</h3>
+                <p>Arkusze egzaminacyjne.</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="generator_arkuszy.html">
+                <h3>Generator arkuszy</h3>
+                <p>Wygeneruj i rozwiąż arkusz egzaminacyjny.</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="geometria_3d.html">
+                <h3>Geometria 3D</h3>
+                <p>Graniastosłupy, ostrosłupy, bryły obrotowe.</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="AI_na_lekcjach_matematyki.html">
+                <h3>AI na lekcjach matematyki</h3>
+                <p>Strony i aplikacje przydatne do nauki matematyki</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="Karty_pracy.html">
+                <h3>Karty pracy</h3>
+                <p>Materiały dla nauczycieli.</p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Kontakt: kabrik987@gmail.com
+    </div>
+</body>
+</html>
