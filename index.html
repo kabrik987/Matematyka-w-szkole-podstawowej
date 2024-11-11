@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -49,7 +48,7 @@
         /* Kontener na kafelki */
         .container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             max-width: 1000px;
             padding: 20px;
@@ -90,13 +89,31 @@
 
         /* Wyśrodkowana stopka z adresem e-mail */
         .footer {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.2em;
+            font-size: 1em;
             color: #b5651d;
             text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        /* Responsywność dla urządzeń mobilnych */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                margin: 10px;
+            }
+
+            .tile {
+                padding: 15px;
+            }
+
+            .tile h3 {
+                font-size: 1.2em;
+            }
+
+            .footer {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -147,3 +164,4 @@
     </div>
 </body>
 </html>
+
